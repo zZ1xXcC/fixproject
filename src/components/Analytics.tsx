@@ -118,7 +118,7 @@ export function Analytics() {
   return (
     <div className="p-4 md:p-6 h-full overflow-y-auto">
       <div className="flex items-center space-x-3 mb-6">
-        <BarChart3 className="w-5 h-5 md:w-6 md:h-6 text-coral-500" style={{ color: '#ff7875' }} />
+        <BarChart3 className="w-5 h-5 md:w-6 md:h-6" style={{ color: '#ff7875' }} />
         <h2 className="text-lg md:text-2xl font-bold text-gray-900 uppercase">АНАЛИТИКА ЗАДАЧ</h2>
       </div>
 
@@ -130,7 +130,6 @@ export function Analytics() {
           value={totalTasks}
           subtitle={`${completionRate}% ВЫПОЛНЕНО`}
           color="bg-coral-400"
-          style={{ backgroundColor: '#ff7875' }}
         />
         <StatCard
           icon={TrendingUp}
@@ -159,7 +158,7 @@ export function Analytics() {
         {/* Распределение по статусам */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 md:p-6">
           <h3 className="text-md md:text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-            <PieChart className="w-4 h-4 md:w-5 md:h-5 text-coral-500" style={{ color: '#ff7875' }} />
+            <PieChart className="w-4 h-4 md:w-5 md:h-5" style={{ color: '#ff7875' }} />
             <span className="uppercase">РАСПРЕДЕЛЕНИЕ ПО СТАТУСАМ</span>
           </h3>
           <div className="space-y-3 md:space-y-4">
@@ -220,7 +219,7 @@ export function Analytics() {
         {/* Месячная статистика с визуальным представлением */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 md:p-6">
           <h3 className="text-md md:text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-            <BarChart3 className="w-4 h-4 md:w-5 md:h-5 text-green-400" style={{ color: '#90ee90' }} />
+            <BarChart3 className="w-4 h-4 md:w-5 md:h-5" style={{ color: '#90ee90' }} />
             <span className="uppercase">СТАТИСТИКА ПО МЕСЯЦАМ</span>
           </h3>
           
@@ -259,7 +258,7 @@ export function Analytics() {
       {/* Производительность пользователей */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 md:p-6 mb-6 md:mb-8">
         <h3 className="text-md md:text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-          <Users className="w-4 h-4 md:w-5 md:h-5 text-coral-500" style={{ color: '#ff7875' }} />
+          <Users className="w-4 h-4 md:w-5 md:h-5" style={{ color: '#ff7875' }} />
           <span className="uppercase">ПРОИЗВОДИТЕЛЬНОСТЬ ПОЛЬЗОВАТЕЛЕЙ</span>
         </h3>
         
@@ -377,7 +376,7 @@ export function Analytics() {
       {/* Недавняя активность */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 md:p-6">
         <h3 className="text-md md:text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-          <Calendar className="w-4 h-4 md:w-5 md:h-5 text-purple-400" style={{ color: '#dda0dd' }} />
+          <Calendar className="w-4 h-4 md:w-5 md:h-5" style={{ color: '#dda0dd' }} />
           <span className="uppercase">НЕДАВНЯЯ АКТИВНОСТЬ</span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

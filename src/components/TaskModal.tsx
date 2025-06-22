@@ -409,6 +409,11 @@ export function TaskModal({ task, isOpen, onClose, defaultStatus = 'created' }: 
     return currentUser?.role === 'admin' || comment.userId === currentUser?.id;
   };
 
+  const handleCancelEdit = () => {
+    setEditingCommentId(null);
+    setEditingCommentText('');
+  };
+
   if (!isOpen) return null;
 
   const priorityLabels = {
@@ -905,10 +910,7 @@ export function TaskModal({ task, isOpen, onClose, defaultStatus = 'created' }: 
                               </button>
                               <button
                                 type="button"
-                                onClick={() => {
-                                  set EditingCommentId(null);
-                                  setEditingCommentText('');
-                                }}
+                                onClick={handleCancelEdit}
                                 className="px-3 py-1 text-gray-600 hover:text-gray-800 rounded-lg hover:bg-gray-100 transition-colors text-xs font-medium uppercase"
                               >
                                 ОТМЕНА
